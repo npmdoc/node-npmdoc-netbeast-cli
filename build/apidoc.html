@@ -1,0 +1,709 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/netbeast/dashboard#readme"
+
+    >netbeast-cli (v0.5.9)</a>
+</h1>
+<h4>Netbeast OS dashboard, IoT apps manager</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.netbeast-cli">module netbeast-cli</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.app">
+            function <span class="apidocSignatureSpan">netbeast-cli.</span>app
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.boot_on_load">
+            function <span class="apidocSignatureSpan">netbeast-cli.</span>boot_on_load
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.scan">
+            function <span class="apidocSignatureSpan">netbeast-cli.</span>scan
+            <span class="apidocSignatureSpan">(done)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.start">
+            function <span class="apidocSignatureSpan">netbeast-cli.</span>start
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">netbeast-cli.</span>api</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.netbeast-cli.api">module netbeast-cli.api</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.api.launch">
+            function <span class="apidocSignatureSpan">netbeast-cli.api.</span>launch
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.api.restart">
+            function <span class="apidocSignatureSpan">netbeast-cli.api.</span>restart
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.api.stop">
+            function <span class="apidocSignatureSpan">netbeast-cli.api.</span>stop
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.api.uninstall">
+            function <span class="apidocSignatureSpan">netbeast-cli.api.</span>uninstall
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.netbeast-cli.app">module netbeast-cli.app</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.app.app">
+            function <span class="apidocSignatureSpan">netbeast-cli.</span>app
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.app.create">
+            function <span class="apidocSignatureSpan">netbeast-cli.app.</span>create
+            <span class="apidocSignatureSpan">(appName, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.netbeast-cli.boot_on_load">module netbeast-cli.boot_on_load</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.boot_on_load.boot_on_load">
+            function <span class="apidocSignatureSpan">netbeast-cli.</span>boot_on_load
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.netbeast-cli.scan">module netbeast-cli.scan</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.scan.scan">
+            function <span class="apidocSignatureSpan">netbeast-cli.</span>scan
+            <span class="apidocSignatureSpan">(done)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.netbeast-cli.start">module netbeast-cli.start</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.netbeast-cli.start.start">
+            function <span class="apidocSignatureSpan">netbeast-cli.</span>start
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.netbeast-cli" id="apidoc.module.netbeast-cli">module netbeast-cli</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.app" id="apidoc.element.netbeast-cli.app">
+        function <span class="apidocSignatureSpan">netbeast-cli.</span>app
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function App(name) {
+  self = this
+  self.name = name
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.boot_on_load" id="apidoc.element.netbeast-cli.boot_on_load">
+        function <span class="apidocSignatureSpan">netbeast-cli.</span>boot_on_load
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function bootOnload() {
+  App.modules(function (err, apps) {
+    if (err) throw err
+
+    Promise.map(apps, function (app) {
+      if (!app || !app.netbeast || !app.netbeast.bootOnLoad) return Promise.resolve()
+
+      Activity.boot(app.name, function (err, port) {
+        if (err) return Promise.reject(err)
+
+        console.info(&#x27;🚀  [booting] %s launched on port %s &#x27;, app.name, port.port)
+        Promise.resolve(port.port)
+      })
+    }).catch(function (err) {
+      if (err) throw err
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.scan" id="apidoc.element.netbeast-cli.scan">
+        function <span class="apidocSignatureSpan">netbeast-cli.</span>scan
+        <span class="apidocSignatureSpan">(done)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">scan = function (done) {
+  var result = []
+  var client = dgram.createSocket(&#x27;udp4&#x27;)
+  const MCAST_IP = &#x27;239.0.16.18&#x27;
+  const MCAST_PORT = 16180
+
+  freeport(function (err, port) {
+    if (err) throw err
+    client.bind(port, &#x27;0.0.0.0&#x27;)
+  })
+
+  client.on(&#x27;listening&#x27;, function () {
+    var msg = new Buffer(&#x27;hi&#x27;)
+
+    var spinner = new Spinner(&#x27;Looking for netbeasts... %s&#x27;)
+    spinner.setSpinnerString(&#x27;|/-\\&#x27;)
+    spinner.start()
+
+    // Poll N times for Netbeast router&#x27;s in subnet
+    // =====================================
+    const N = 3
+    for (var i = 0; i &#x3c; N; i++) {
+      setTimeout(function () {
+        client.send(msg, 0, msg.length, MCAST_PORT, MCAST_IP, function (err, bytes) {
+          if (err) throw err
+        })
+      }, i * 1000)
+    }
+
+    // Close client after N attempts
+    setTimeout(function () {
+      client.close()
+      spinner.stop()
+      if (result.length === 0) {
+        console.log(&#x27;No Netbeast routers found in subnet.&#x27;)
+      }
+      console.log(&#x27;\nDone.\n&#x27;)
+
+      if (typeof done === &#x27;function&#x27;) return done(result)
+    }, N * 1000)
+  })
+
+  client.on(&#x27;message&#x27;, function (msg, req) {
+    var beast = { address: req.address, port: msg.toString() }
+    if (_notListed(result, beast)) {
+      if (result.length === 0) {
+        console.log(&#x27;\n# Netbeast at reach&#x27;)
+        console.log(&#x27;=====================&#x27;)
+      }
+      console.log(&#x27;* Netbeast alive at %s:%s&#x27;, beast.address, beast.port)
+      result.push(beast)
+      if (typeof done === &#x27;function&#x27;) return done(result)
+    }
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.start" id="apidoc.element.netbeast-cli.start">
+        function <span class="apidocSignatureSpan">netbeast-cli.</span>start
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">start = function (options) {
+  var opts = {
+    max: 1,
+    killTree: true,
+    cwd: path.resolve(__dirname, &#x27;..&#x27;)
+  }
+
+  var dashboard = spawn(&#x27;node&#x27;, [DASHBOARD_BIN, &#x27;--port&#x27;, options.port, &#x27;--secure_port&#x27;, options.secure_port ] , opts)
+  dashboard.stdout.on(&#x27;data&#x27;, function (data) {
+    console.log(data.toString())
+  })
+  dashboard.stderr.on(&#x27;data&#x27;, function (data) {
+    console.log(data.toString())
+  })
+  dashboard.on(&#x27;error&#x27;, function (err) {
+    console.trace(err)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//       })
+//     },
+//     function ()
+//
+//       // loading symbol
+//       spinner = new Spinner(&#x27;Pushing app to market... %s&#x27;)
+//       spinner.setSpinnerString(&#x27;|/-\\&#x27;)
+//       spinner.<span class="apidocCodeKeywordSpan">start</span>()
+//
+//       // pushing app
+//       var req = request.post({url: push, jar: cookies}, callback)
+//       var form = req.form()
+//       form.append(&#x27;file&#x27;, fs.createReadStream(app))
+//     }], function (err, resp, body) {
+//     if (err) throw err
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.netbeast-cli.api" id="apidoc.module.netbeast-cli.api">module netbeast-cli.api</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.api.launch" id="apidoc.element.netbeast-cli.api.launch">
+        function <span class="apidocSignatureSpan">netbeast-cli.api.</span>launch
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">launch = function (app) {
+  var url = &#x27;http://&#x27; + &#x27;localhost&#x27; + &#x27;:&#x27; + &#x27;8000&#x27; + &#x27;/api/activities/&#x27; + app
+
+  request.post(url, function (err, resp, body) {
+    if (err) throw err
+      console.log(&#x27;Done.&#x27;)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.api.restart" id="apidoc.element.netbeast-cli.api.restart">
+        function <span class="apidocSignatureSpan">netbeast-cli.api.</span>restart
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">restart = function (app) {
+  var url = &#x27;http://&#x27; + &#x27;localhost&#x27; + &#x27;:&#x27; + &#x27;8000&#x27; + &#x27;/api/activities/&#x27; + app
+  request.del(url, function (err, resp, body) {
+    if (err) throw err
+
+      request.post(url, function (err, resp, body) {
+        if (err) throw err
+          console.log(&#x27;Done.&#x27;)
+      })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.api.stop" id="apidoc.element.netbeast-cli.api.stop">
+        function <span class="apidocSignatureSpan">netbeast-cli.api.</span>stop
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stop = function (app) {
+  var url = &#x27;http://&#x27; + &#x27;localhost&#x27; + &#x27;:&#x27; + &#x27;8000&#x27; + &#x27;/api/activities/&#x27; + app
+  request.del(url, function (err, resp, body) {
+    if (err) throw err
+      console.log(&#x27;Done.&#x27;)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//
+//       // pushing app
+//       var req = request.post({url: push, jar: cookies}, callback)
+//       var form = req.form()
+//       form.append(&#x27;file&#x27;, fs.createReadStream(app))
+//     }], function (err, resp, body) {
+//     if (err) throw err
+//     spinner.<span class="apidocCodeKeywordSpan">stop</span>()
+//     console.log(&#x27;\n%s responded code %s\n%s&#x27;,
+//           push, resp.statusCode, body)
+//   })
+// }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.api.uninstall" id="apidoc.element.netbeast-cli.api.uninstall">
+        function <span class="apidocSignatureSpan">netbeast-cli.api.</span>uninstall
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">uninstall = function (app) {
+  console.log(&#x27;Uninstalling app &#x27; + app + &#x27;...&#x27;)
+
+  var url = &#x27;http://&#x27; + &#x27;localhost&#x27; + &#x27;:&#x27; + &#x27;8000&#x27; + &#x27;/api/apps/&#x27; + app
+  request.del(url, function (err, resp, body) {
+    if (err) throw err
+      console.log(&#x27;%s responded code %s\n%s&#x27;, url, resp.statusCode, body)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.netbeast-cli.app" id="apidoc.module.netbeast-cli.app">module netbeast-cli.app</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.app.app" id="apidoc.element.netbeast-cli.app.app">
+        function <span class="apidocSignatureSpan">netbeast-cli.</span>app
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function App(name) {
+  self = this
+  self.name = name
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.app.create" id="apidoc.element.netbeast-cli.app.create">
+        function <span class="apidocSignatureSpan">netbeast-cli.app.</span>create
+        <span class="apidocSignatureSpan">(appName, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (appName, options) {
+  _quitIfExists(appName)
+
+  var destination = path.join(CURRENT_DIR, appName)
+  var destJson = path.join(destination, &#x27;package.json&#x27;)
+
+  var bundle = (options.plugin) ? PLUGIN_BUNDLE : APP_BUNDLE
+
+  console.log(&#x22;&#x3e; Creating app &#x27;%s&#x27;...&#x22;, appName)
+  fs.copySync(bundle, destination)
+  var pkgJson = fs.readJsonSync(destJson)
+  pkgJson.name = appName
+  fs.writeJsonSync(destJson, pkgJson)
+  console.log(&#x27;&#x3e; The extraction has ended!&#x27;)
+  console.log(&#x27;&#x3e; You may want to install app dependences. Type:\n&#x27;)
+  console.log(&#x27;\t cd ./%s;&#x27;, appName)
+  console.log(&#x27;\t npm install;\n&#x27;)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* And declare your routes into the API
+*/
+
+app.get(&#x27;/discover&#x27;, function () {
+	/* TODO, implement discovery */
+
+	/* for each device */
+	netbeast(&#x27;topic&#x27;).<span class="apidocCodeKeywordSpan">create</span>({ app: &#x27;my-first-plugin&#x27;, hook: &#x27;DEVICE_ID
+&#x27; })
+	/* end of for */
+
+	/* or */
+	/* Register all device together and delete the resources no longer available */
+	netbeast(&#x27;topic&#x27;).udateDB({ app: &#x27;my-first-plugin&#x27;, hook: [&#x27;DEVICE1_ID&#x27;, &#x27;DEVICE2_ID&#x27;, &#
+x27;DEVICE3_ID&#x27;, &#x27;DEVICE4_ID&#x27;] })
+})
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.netbeast-cli.boot_on_load" id="apidoc.module.netbeast-cli.boot_on_load">module netbeast-cli.boot_on_load</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.boot_on_load.boot_on_load" id="apidoc.element.netbeast-cli.boot_on_load.boot_on_load">
+        function <span class="apidocSignatureSpan">netbeast-cli.</span>boot_on_load
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function bootOnload() {
+  App.modules(function (err, apps) {
+    if (err) throw err
+
+    Promise.map(apps, function (app) {
+      if (!app || !app.netbeast || !app.netbeast.bootOnLoad) return Promise.resolve()
+
+      Activity.boot(app.name, function (err, port) {
+        if (err) return Promise.reject(err)
+
+        console.info(&#x27;🚀  [booting] %s launched on port %s &#x27;, app.name, port.port)
+        Promise.resolve(port.port)
+      })
+    }).catch(function (err) {
+      if (err) throw err
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.netbeast-cli.scan" id="apidoc.module.netbeast-cli.scan">module netbeast-cli.scan</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.scan.scan" id="apidoc.element.netbeast-cli.scan.scan">
+        function <span class="apidocSignatureSpan">netbeast-cli.</span>scan
+        <span class="apidocSignatureSpan">(done)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">scan = function (done) {
+  var result = []
+  var client = dgram.createSocket(&#x27;udp4&#x27;)
+  const MCAST_IP = &#x27;239.0.16.18&#x27;
+  const MCAST_PORT = 16180
+
+  freeport(function (err, port) {
+    if (err) throw err
+    client.bind(port, &#x27;0.0.0.0&#x27;)
+  })
+
+  client.on(&#x27;listening&#x27;, function () {
+    var msg = new Buffer(&#x27;hi&#x27;)
+
+    var spinner = new Spinner(&#x27;Looking for netbeasts... %s&#x27;)
+    spinner.setSpinnerString(&#x27;|/-\\&#x27;)
+    spinner.start()
+
+    // Poll N times for Netbeast router&#x27;s in subnet
+    // =====================================
+    const N = 3
+    for (var i = 0; i &#x3c; N; i++) {
+      setTimeout(function () {
+        client.send(msg, 0, msg.length, MCAST_PORT, MCAST_IP, function (err, bytes) {
+          if (err) throw err
+        })
+      }, i * 1000)
+    }
+
+    // Close client after N attempts
+    setTimeout(function () {
+      client.close()
+      spinner.stop()
+      if (result.length === 0) {
+        console.log(&#x27;No Netbeast routers found in subnet.&#x27;)
+      }
+      console.log(&#x27;\nDone.\n&#x27;)
+
+      if (typeof done === &#x27;function&#x27;) return done(result)
+    }, N * 1000)
+  })
+
+  client.on(&#x27;message&#x27;, function (msg, req) {
+    var beast = { address: req.address, port: msg.toString() }
+    if (_notListed(result, beast)) {
+      if (result.length === 0) {
+        console.log(&#x27;\n# Netbeast at reach&#x27;)
+        console.log(&#x27;=====================&#x27;)
+      }
+      console.log(&#x27;* Netbeast alive at %s:%s&#x27;, beast.address, beast.port)
+      result.push(beast)
+      if (typeof done === &#x27;function&#x27;) return done(result)
+    }
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.netbeast-cli.start" id="apidoc.module.netbeast-cli.start">module netbeast-cli.start</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.netbeast-cli.start.start" id="apidoc.element.netbeast-cli.start.start">
+        function <span class="apidocSignatureSpan">netbeast-cli.</span>start
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">start = function (options) {
+  var opts = {
+    max: 1,
+    killTree: true,
+    cwd: path.resolve(__dirname, &#x27;..&#x27;)
+  }
+
+  var dashboard = spawn(&#x27;node&#x27;, [DASHBOARD_BIN, &#x27;--port&#x27;, options.port, &#x27;--secure_port&#x27;, options.secure_port ] , opts)
+  dashboard.stdout.on(&#x27;data&#x27;, function (data) {
+    console.log(data.toString())
+  })
+  dashboard.stderr.on(&#x27;data&#x27;, function (data) {
+    console.log(data.toString())
+  })
+  dashboard.on(&#x27;error&#x27;, function (err) {
+    console.trace(err)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//       })
+//     },
+//     function ()
+//
+//       // loading symbol
+//       spinner = new Spinner(&#x27;Pushing app to market... %s&#x27;)
+//       spinner.setSpinnerString(&#x27;|/-\\&#x27;)
+//       spinner.<span class="apidocCodeKeywordSpan">start</span>()
+//
+//       // pushing app
+//       var req = request.post({url: push, jar: cookies}, callback)
+//       var form = req.form()
+//       form.append(&#x27;file&#x27;, fs.createReadStream(app))
+//     }], function (err, resp, body) {
+//     if (err) throw err
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
