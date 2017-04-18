@@ -1,4 +1,7 @@
-# api documentation for  [netbeast-cli (v0.5.9)](https://github.com/netbeast/dashboard#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-netbeast-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-netbeast-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-netbeast-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-netbeast-cli)
+# npmdoc-netbeast-cli
+
+#### api documentation for  [netbeast-cli (v0.5.9)](https://github.com/netbeast/dashboard#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-netbeast-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-netbeast-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-netbeast-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-netbeast-cli)
+
 #### Netbeast OS dashboard, IoT apps manager
 
 [![NPM](https://nodei.co/npm/netbeast-cli.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/netbeast-cli)
